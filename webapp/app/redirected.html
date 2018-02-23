@@ -1,0 +1,24 @@
+<html>
+	<head></head>
+	<body>
+		<div class="container">
+			<div id="cc">
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+		
+		
+		var comments=sessionStorage.getItem("comments");
+		var img=sessionStorage.getItem("url");
+		var title=sessionStorage.getItem("title");
+		
+		var str="<div> <p> " + title+"</p> <img src=\" "+img+"\" \> <p> "+comments+"</p>";
+		
+		document.getElementById("cc").innerHTML=str;
+			
+			
+		</script>
+	</body>
+	
+</html>
