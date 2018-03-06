@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+	
+  
+	<div id ="head"><h1 style="text-align:center;">Welcome Come Aboard the Stories</h1></div>
+	<div id="cc" style="
+    margin: 30px ;
+    margin-left: 37%;
+    margin-right: 34%;
+">
+		<form >
+			
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalAdd">Add Notes</button>
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalUpdate">Update Notes</button>
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDelete">Delete Notes</button>
+			 <div id="myModalAdd" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<form class="mod">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<input type="text" id="mtopic" class="form-control" placeholder="topic"></input>
+					</div>
+					<div class="modal-body">
+						
+						<input type="text" id="mtitle" class="form-control" placeholder="title"></input>
+					</div>
+					<div class="modal-body">
+						<input type="text" id="mbody" class="form-control" placeholder="body" ></input>
+					</div>
+					<div class="modal-footer">
+						<input type="submit" class="btn btn-info btn-lg" id="mSubmit" onclick="add();"></input>
+					</div>
+				</div>
+				</form>
+
+			</div>
+			</div>
+			
+			
+			 <div id="myModalDelete" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<form>
+				<div class="modal-content">
+					<div class="modal-header">
+						
+						<input type="text" id="del" class="form-control" placeholder="title"></input>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-footer">
+						<input type="submit" class="btn btn-info btn-lg" id="mSubmit" onclick="delet();"></input>
+					</div>
+				</div>
+				</form>
+
+			</div>
+			</div>
+		</form>
+	</div>
+	<br/>
+	<div id="cd"></div><br/>
+	<div id="cx"></div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/getnotes.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

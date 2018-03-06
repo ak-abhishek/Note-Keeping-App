@@ -1,0 +1,32 @@
+$(function(){
+	$.user=sessionStorage.getItem("user");
+	$.pass=sessionStorage.getitem("pass");
+	$.str="";
+	if($.data=checkdata($.user)){
+		for( $.i=0;$.i<($.data).length;i++)
+		{
+			str=str+'<div class='+i+'>'+$.data[0].title+'</div><div class='+i'>'+$.data[0].notes+'</div>';
+			
+		}
+		
+		document.getElementById("cc").innerHTML=str;
+	}
+	
+
+});
+
+function checkdata(email)
+{		
+	
+	var data;
+	$.ajax({
+		type: 'GET',
+		url: 'http://restful-api-.herokuapp.com/api/'+email+'/notes',
+		success: function(data) {
+		console.log("The data:", data);
+		}
+	});
+	
+	return data;
+	
+}
